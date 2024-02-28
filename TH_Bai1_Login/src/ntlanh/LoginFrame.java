@@ -74,8 +74,12 @@ public class LoginFrame extends JFrame {
 			this.setVisible(false);
 		}
 		else {
-			
+			//Xoa du lieu nhap
+			txtMatKhau.setText("");
+			txtTenDangNhap.setText("");	
+            
+			JOptionPane hopThoai = new JOptionPane();
+			hopThoai.showMessageDialog(this, "Đăng nhập không thành công. Vui lòng kiểm tra lại thông tin đăng nhập.");		
 		}
 	}
-
 }
